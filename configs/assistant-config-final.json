@@ -1,0 +1,64 @@
+{
+  "id": "ASSISTANT_ID_REDACTED",
+  "orgId": "ORG_ID_REDACTED",
+  "name": "Voice Pipeline Lab Assistant",
+
+  "voice": {
+    "voiceId": "Emma",
+    "provider": "vapi",
+    "fallbackPlan": {
+      "voices": [
+        {
+          "voiceId": "Tara",
+          "provider": "vapi"
+        }
+      ]
+    }
+  },
+
+  "createdAt": "TIMESTAMP_REDACTED",
+  "updatedAt": "TIMESTAMP_REDACTED",
+
+  "model": {
+    "model": "gpt-4.1-mini",
+    "provider": "openai",
+    "temperature": 0.2,
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful, concise voice assistant. Keep responses under 2 sentences."
+      }
+    ]
+  },
+
+  "firstMessage": "Hello.",
+  "voicemailMessage": "Please call back when you're available.",
+  "endCallMessage": "Goodbye.",
+
+  "transcriber": {
+    "provider": "deepgram",
+    "model": "nova-3",
+    "language": "en"
+  },
+
+  "analysisPlan": {
+    "summaryPlan": {
+      "enabled": false
+    },
+    "successEvaluationPlan": {
+      "enabled": false
+    }
+  },
+
+  "backgroundDenoisingEnabled": true,
+
+  "artifactPlan": {
+    "structuredOutputIds": [
+      "STRUCTURED_OUTPUT_ID_1_REDACTED",
+      "STRUCTURED_OUTPUT_ID_2_REDACTED",
+      "STRUCTURED_OUTPUT_ID_3_REDACTED"
+    ]
+  },
+
+  "isServerUrlSecretSet": false
+}
