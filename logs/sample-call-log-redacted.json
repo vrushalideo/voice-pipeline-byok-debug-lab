@@ -1,0 +1,69 @@
+Redacted — Deepgram Log (Timestamp Preserved)
+
+{
+  "endpoint": "/v1/listen",
+  "method": "Streaming",
+  "status": "101 OK",
+
+  "query": {
+    "model": "nova-3",
+    "language": "en",
+    "encoding": "linear16",
+    "channels": 2,
+    "sample_rate": 24000,
+    "punctuate": true,
+    "numbers": true,
+    "interim_results": true,
+    "multichannel": true,
+    "filler_words": true,
+    "endpointing": true
+  },
+
+  "request_id": "REQUEST_ID_REDACTED",
+  "api_key_id": "API_KEY_ID_REDACTED",
+
+  "performed_at": "2026-02-13T08:36:53Z",
+  "audio_duration": "00:00:15",
+
+  "deployment": "Hosted",
+  "tier": "nova-3",
+
+  "model_uuid": "MODEL_UUID_REDACTED",
+  "cost": "$0.00383"
+}
+
+Redacted — Vapi Log (Timestamp Preserved)
+{
+  "id": "log-0",
+  "level": 30,
+  "severityText": "INFO",
+  "body": "New turn started",
+
+  "attributes": {
+    "category": "system",
+    "callId": "CALL_ID_REDACTED",
+    "orgId": "ORG_ID_REDACTED",
+    "turnStartTime": "2026-02-13T08:36:53.294Z"
+  }
+}
+
+Redacted — OpenAI Log Properties
+{
+  "provider": "openai",
+
+  "created": "Feb 13, 2026 at 12:36 AM",
+
+  "id": "OPENAI_RESPONSE_ID_REDACTED",
+
+  "model": "gpt-4.1",
+
+  "tokens": {
+    "total": 1346
+  },
+
+  "configuration": {
+    "response_format": "json_schema",
+    "temperature": 0.00,
+    "verbosity": "medium"
+  }
+}
